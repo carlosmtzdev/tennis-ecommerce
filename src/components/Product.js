@@ -6,7 +6,7 @@ import {colors} from './colors'
 const ProductStyled = styled.div`
   border-radius: 21px;
   background-color: ${colors.grey};
-  padding: 11px 17px;
+  padding: 1rem 17px;
 
   .id {
     width: 37px;
@@ -17,15 +17,16 @@ const ProductStyled = styled.div`
     justify-content: center;
     align-items: center;
     color: white;
+    margin-bottom: 3rem;
   }
 
 
 `
 
-export default function Product() {
+export default function Product({id}) {
   return (
     <ProductStyled>
-      <div className="id">1</div>
+      <div className="id">{id}</div>
       <div className="image">
         <img src={product} alt="" />
       </div>

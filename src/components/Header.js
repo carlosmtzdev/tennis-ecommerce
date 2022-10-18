@@ -26,6 +26,7 @@ const HeaderStyled = styled.header`
     cursor: pointer;
     width: 40px;
     height: 40px;
+    margin-right: 1rem;
 
     @media ${device.laptop} { 
       display: none;
@@ -41,6 +42,7 @@ const LogoStyled = styled.div`
   display: flex;
   width: 37px;
   height: 37px;
+  
 `
 
 const NavigationStyled = styled.nav`
@@ -134,7 +136,11 @@ const NavigationStyled = styled.nav`
 const LocateStyled = styled.div`
   display: flex;
   margin-left: auto;
-  margin-top: 25px;
+  
+
+  @media ${device.laptop} { 
+    margin-top: 25px;
+  }
 
   p {
     padding: 1rem;

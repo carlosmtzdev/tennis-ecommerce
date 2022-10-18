@@ -6,8 +6,6 @@ import {device} from './sizes'
 
 const ProductsStyled = styled.section`
 
-  
-
   .container {
     width: 90%;
     max-width: 1440px;
@@ -96,9 +94,9 @@ export default function Products() {
 
         <div className="list">
 
-          <Product />
-          <Product />
-          <Product />
+          <Product id="1"/>
+          <Product id="2"/>
+          <Product id="3"/>
           
         </div>
         
