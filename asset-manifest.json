@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tennis-ecommerce/static/css/main.ffe34ec7.css",
+    "main.js": "/tennis-ecommerce/static/js/main.70a42690.js",
+    "static/js/787.08f1b9ed.chunk.js": "/tennis-ecommerce/static/js/787.08f1b9ed.chunk.js",
+    "static/media/banner.jpg": "/tennis-ecommerce/static/media/banner.1d0d0b6fd933521520a4.jpg",
+    "static/media/athlete.jpg": "/tennis-ecommerce/static/media/athlete.14af09b2c180f9f1cc31.jpg",
+    "static/media/ball.jpg": "/tennis-ecommerce/static/media/ball.31edf02f1266e796e12a.jpg",
+    "static/media/product.jpg": "/tennis-ecommerce/static/media/product.05ec60f86089dcdffd8e.jpg",
+    "static/media/logo.svg": "/tennis-ecommerce/static/media/logo.8e1de1dbbdea816af5234036aced1459.svg",
+    "static/media/vimeo.svg": "/tennis-ecommerce/static/media/vimeo.60b2519cea31cae942507c6c37907c9f.svg",
+    "static/media/twitter.svg": "/tennis-ecommerce/static/media/twitter.5f3bfa5c9776217c2a76977ec455163c.svg",
+    "static/media/instagram.svg": "/tennis-ecommerce/static/media/instagram.99f10a78cbef8d739ba56d1d4e19bd07.svg",
+    "index.html": "/tennis-ecommerce/index.html",
+    "static/media/linkedin.svg": "/tennis-ecommerce/static/media/linkedin.d48c548485874bebf905eb5771b1f720.svg",
+    "static/media/facebook.svg": "/tennis-ecommerce/static/media/facebook.0994fa80894b92256afebd697bae679d.svg",
+    "main.ffe34ec7.css.map": "/tennis-ecommerce/static/css/main.ffe34ec7.css.map",
+    "main.70a42690.js.map": "/tennis-ecommerce/static/js/main.70a42690.js.map",
+    "787.08f1b9ed.chunk.js.map": "/tennis-ecommerce/static/js/787.08f1b9ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffe34ec7.css",
+    "static/js/main.70a42690.js"
+  ]
+}
