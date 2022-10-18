@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tennis-ecommerce/static/css/main.c16362ac.css",
-    "main.js": "/tennis-ecommerce/static/js/main.d2110b32.js",
+    "main.js": "/tennis-ecommerce/static/js/main.c45c1c0b.js",
     "static/js/787.08f1b9ed.chunk.js": "/tennis-ecommerce/static/js/787.08f1b9ed.chunk.js",
     "static/media/banner.jpg": "/tennis-ecommerce/static/media/banner.1d0d0b6fd933521520a4.jpg",
     "static/media/athlete.jpg": "/tennis-ecommerce/static/media/athlete.14af09b2c180f9f1cc31.jpg",
@@ -17,11 +17,11 @@
     "static/media/facebook.svg": "/tennis-ecommerce/static/media/facebook.0994fa80894b92256afebd697bae679d.svg",
     "static/media/open.svg": "/tennis-ecommerce/static/media/open.9a0102f4254ed50082c46eb0c71a68ae.svg",
     "main.c16362ac.css.map": "/tennis-ecommerce/static/css/main.c16362ac.css.map",
-    "main.d2110b32.js.map": "/tennis-ecommerce/static/js/main.d2110b32.js.map",
+    "main.c45c1c0b.js.map": "/tennis-ecommerce/static/js/main.c45c1c0b.js.map",
     "787.08f1b9ed.chunk.js.map": "/tennis-ecommerce/static/js/787.08f1b9ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c16362ac.css",
-    "static/js/main.d2110b32.js"
+    "static/js/main.c45c1c0b.js"
   ]
 }
