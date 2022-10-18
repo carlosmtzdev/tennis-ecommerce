@@ -49,8 +49,8 @@ const NavigationStyled = styled.nav`
   position: fixed;
   z-index: 9;
   top: 0;
-  left: -500px;
-  width: 500px;
+  left: -300px;
+  width: 300px;
   height: 100%;
   background-color: rgba(0,0,0,0.2);
   background-color: white;

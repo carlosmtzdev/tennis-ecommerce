@@ -25,10 +25,6 @@ const ProductsStyled = styled.section`
     max-width: 530px;
     margin: 0 auto;
 
-    @media ${device.laptop} { 
-
-    }
-
     img {
       display: block;
       width: 100%;
@@ -37,11 +33,16 @@ const ProductsStyled = styled.section`
   }
 
   .content {
-    position: absolute;
-    top: 0;
-    left: 40%;
-    color: white;
-    width: 60%;
+    padding: 1rem;
+    background-color: ${colors.grey};
+
+    @media ${device.laptop} { 
+      position: absolute;
+      top: 0;
+      left: 40%;
+      color: white;
+      width: 60%;
+    }
   }
 
   .title {
@@ -49,8 +50,13 @@ const ProductsStyled = styled.section`
     letter-spacing: -0.06px;
     font-size: 50px;
     font-weight: normal;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media ${device.laptop} { 
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
 
     span {
       font-weight: bold;
@@ -61,8 +67,13 @@ const ProductsStyled = styled.section`
     line-height: 1.67;
     letter-spacing: 0.51px;
     font-size: 18px;
-    width: 300px;
+    
+    @media ${device.laptop} {
+      width: 300px;
+    }
   }
+
+
 
   .dot {
     margin-top: 2rem;
@@ -120,6 +131,11 @@ const ProductsStyled = styled.section`
     align-items: center;
     overflow-x: auto;
     padding: 1rem;
+    background-color: white;
+
+    @media ${device.laptop} { 
+
+    }
 
     > div {
       margin: 1rem;
