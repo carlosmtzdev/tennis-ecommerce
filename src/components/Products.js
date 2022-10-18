@@ -118,7 +118,6 @@ const ProductsStyled = styled.section`
     flex-grow: 1;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     overflow-x: auto;
     padding: 1rem;
 
