@@ -1,25 +1,39 @@
 import React from 'react'
 import styled from 'styled-components'
 import ball from '../images/ball.jpg'
-
 import Product from './Product'
+import {device} from './sizes'
 
 const ProductsStyled = styled.section`
 
-  img {
-    display: block;
-  }
+  
 
   .container {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
-    display: flex;
+    
+
+    @media ${device.laptop} { 
+      display: flex;
+    }
   }
 
   .banner {
     position: relative;
-    width: 530px;
+    width: 90%;
+    max-width: 530px;
+    margin: 0 auto;
+
+    @media ${device.laptop} { 
+
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 
   .content {
@@ -55,6 +69,13 @@ const ProductsStyled = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow-x: auto;
+    padding: 1rem;
+
+    > div {
+      margin: 1rem;
+    }
+
   }
 `
 

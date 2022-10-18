@@ -1,12 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import athlete from '../images/athlete.jpg'
+import {device} from './sizes'
+
+import {colors} from './colors'
 
 const CoverStyled = styled.section`
+  
+  background-color: ${colors.grey};
+  
   .container {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
+
+    @media ${device.laptop} { 
+      width: 90%;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
   }
 
   img {

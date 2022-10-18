@@ -7,6 +7,7 @@ import twitter from '../images/twitter.svg'
 import facebook from '../images/facebook.svg'
 import logo from '../images/logo.svg'
 import {colors} from './colors'
+import {device} from './sizes'
 
 const FooterStyled = styled.footer`
   background-color: ${colors.green};
@@ -20,17 +21,25 @@ const FooterStyled = styled.footer`
   }
 
   .nav {
-    display: flex;
     list-style: none;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+
+    @media ${device.laptop} { 
+      display: flex;
+      margin-bottom: 1rem;
+    }
 
     li {
-      margin-right: 3rem;
-      
+      margin-bottom: 1rem;
       font-size: 13px;
       line-height: normal;
       letter-spacing: 1.14px;
       color: #2b3049;
+
+      @media ${device.laptop} { 
+        display: flex;
+        margin-right: 3rem;
+      }
 
       &.active {
         font-weight: bold;
@@ -38,20 +47,31 @@ const FooterStyled = styled.footer`
     }
   }
 
-  .section {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+  @media ${device.laptop} { 
+    .section {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
   }
+  
 
   .social img {
     margin-right: 12px;
   }
 
-  .logo img {
-    width: 55px;
-    height: 55px;
-  }
+  .logo  {
+    margin-top: 1.5rem;
+    
+    @media ${device.laptop} { 
+      margin-top: 0;
+    }
+
+    img {
+      width: 55px;
+      height: 55px;
+    }
+  } 
 
 `
 

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import logo from '../images/logo.svg';
-
+import close from '../images/close.svg';
+import open from '../images/open.svg';
+import {device} from './sizes'
+import {colors} from './colors'
 
 const HeaderStyled = styled.header`
   color: white;
@@ -18,6 +21,20 @@ const HeaderStyled = styled.header`
     width: 90%;
     margin: 0 auto;
   }
+
+  .open {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    @media ${device.laptop} { 
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 `
 
 const LogoStyled = styled.div`
@@ -27,22 +44,72 @@ const LogoStyled = styled.div`
 `
 
 const NavigationStyled = styled.nav`
-  margin-left: 100px;
-  margin-top: 25px;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: -500px;
+  width: 500px;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+  background-color: white;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: all 0.3s ease;
+
+  &.is-active {
+    left: 0;
+  }
+
+  @media ${device.laptop} { 
+    margin-left: 100px;
+    margin-top: 25px;
+    position: initial;
+    width: initial;
+    height: initial;
+    z-index: initial;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .close {
+    cursor: pointer;
+
+    @media ${device.laptop} { 
+      display: none;
+    }
+  }
+  
 
   ul {
     list-style: none;
-    display: flex;
+    text-align: center;
+    margin-top: 2rem;
+
+    @media ${device.laptop} { 
+      display: flex;
+      margin-top: 0rem;
+    }
   }
 
   li:not(:last-child) {
-    margin-right: 2rem;
+    margin-bottom: 2rem;
+
+    @media ${device.laptop} { 
+      margin-right: 2rem;
+    }
   }
 
   li {
     letter-spacing: 1.5px;
-    
-    
+    color: ${colors.text};
+    font-size: 1.5rem;
+
+    @media ${device.laptop} { 
+      font-size: 1rem;
+      color: white;
+    }
+
     &:hover {
       cursor: pointer;
       border-bottom-color: white;
@@ -79,16 +146,32 @@ const LocateStyled = styled.div`
 `
 
 export default function Header() {
+
+  const [openMenu, setOpenMenu] = useState(false);
+
+  function toggleMenu() {
+    setOpenMenu(!openMenu);
+  }
+
   return (
     <HeaderStyled>
       <div className="container">
+
+        <div className="open" onClick={toggleMenu}>
+          <img src={open} className="App-logo" alt="close nav" />
+        </div>
 
         <LogoStyled>
           <img src={logo} className="App-logo" alt="logo" />
         </LogoStyled>
 
-        <NavigationStyled>
-          <ul className="navigation__container">
+        <NavigationStyled className={`${openMenu ? "is-active" : ""}`}>
+
+          <div className="close" onClick={toggleMenu}>
+            <img src={close} className="App-logo" alt="close nav" />
+          </div>
+
+          <ul className="nav-container">
             <li className="active">Inicio</li>
             <li>Acerca de nosotros</li>
             <li>Historia</li>

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Button from './Button'
 import {colors} from './colors'
+import {device} from './sizes'
 
 const AboutStyled = styled.section`
   background-color: ${colors.grey};
@@ -11,7 +12,10 @@ const AboutStyled = styled.section`
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
-    display: flex;
+
+    @media ${device.laptop} { 
+      display: flex;
+    }
   }
 
   .tennis {
@@ -28,13 +32,19 @@ const AboutStyled = styled.section`
     font-size: 50px;
     line-height: 1.14;
     letter-spacing: -0.06px;
-    width: 555px;
+    
+    @media ${device.laptop} { 
+      width: 555px;
+    }
     
   }
 
   .content {
-    display: flex;
-    align-items: flex-end;
+
+    @media ${device.laptop} { 
+      display: flex;
+      align-items: flex-end;
+    }
   }
 
   .description {
@@ -45,6 +55,14 @@ const AboutStyled = styled.section`
     margin-right: 160px;
     font-size: 18px;
     margin-top: 2rem;
+  }
+
+  .cta {
+    margin-top: 2rem;
+    
+    @media ${device.laptop} { 
+      margin-top: 0;
+    }
   }
 `
 

@@ -8,13 +8,20 @@ import {device} from './sizes'
 const BannerStyled = styled.section`
   width: 100%;
   height: 100vh;
-  background-color: red;
+  min-height: 700px;
+  max-height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  background-image: url(${banner});
+  background-position: center center;
+  
+
 
   @media ${device.laptop} { 
-    background-image: url(${banner});
+    background-position: initial;
+    max-height: 1080px;
+    
   }
 
   .container {
@@ -33,10 +40,14 @@ const BannerStyled = styled.section`
   .title {
     line-height: 1.28;
     letter-spacing: -0.05px;
-    width: 700px;
+    max-width: 700px;
     font-size: 53px;
     margin-bottom: 30px;
     font-weight: normal;
+
+    @media ${device.laptop} { 
+
+    }
   }
 
   .tennis {
